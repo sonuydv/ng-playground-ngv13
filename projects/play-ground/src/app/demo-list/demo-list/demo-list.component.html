@@ -1,0 +1,9 @@
+<ng-container>
+
+  <mat-nav-list>
+    <mat-list-item class="mat-elevation-z22" *ngFor="let link of demoRouteLists; index as i ">
+      <a matLine href="{{link.routePath}}">{{i+1}} : {{link.title}}</a>
+      <mat-icon>arrow_forward</mat-icon>
+    </mat-list-item>
+  </mat-nav-list>
+</ng-container>

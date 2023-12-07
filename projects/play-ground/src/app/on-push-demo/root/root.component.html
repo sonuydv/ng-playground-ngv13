@@ -1,0 +1,34 @@
+<div class="root-comp">
+  <div class="demos flex flex-row justify-start">
+    <app-defualt-parent class="flex-grow bg-pink-300" [person]="personDetail"></app-defualt-parent>
+    <app-on-push-parent class="flex-grow bg-blue-300"
+    [person]="personDetail"></app-on-push-parent>
+    <app-opw-parent class="flex-grow bg-red-300"></app-opw-parent>
+  </div>
+
+  <div class="data-section flex flex-col justify-center items-center gap-4">
+
+
+      <mat-form-field   appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput [formControl]="firstName" >
+      </mat-form-field>
+
+      <mat-form-field  appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput [formControl]="lastName">
+      </mat-form-field>
+
+
+    <div class="flex flex-row gap-3" >
+      <button (click)="onMutate()"
+              mat-raised-button
+              color="accent">Mutate</button>
+      <button (click)="onChangeRef()"
+              mat-raised-button
+              color="accent">Change Reference</button>
+
+    </div>
+  </div>
+
+</div>
