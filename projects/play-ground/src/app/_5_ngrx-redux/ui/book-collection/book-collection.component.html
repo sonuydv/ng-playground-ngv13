@@ -1,0 +1,8 @@
+
+<mat-card *ngFor="let book of books ; trackBy:identify ">
+  <mat-card-title>{{book.volumeInfo.title}}</mat-card-title>
+  <mat-card-subtitle>{{book.volumeInfo.authors}}</mat-card-subtitle>
+  <mat-card-actions>
+    <button (click)="remove.emit(book.id)" color="accent" mat-flat-button>Remove To Collection</button>
+  </mat-card-actions>
+</mat-card>

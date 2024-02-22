@@ -1,0 +1,8 @@
+
+<mat-card *ngFor="let book of books">
+  <mat-card-title>{{book.volumeInfo.title}}</mat-card-title>
+  <mat-card-subtitle>{{book.volumeInfo.authors}}</mat-card-subtitle>
+  <mat-card-actions>
+    <button (click)="add.emit(book.id)" color="primary" mat-flat-button>Add To Collection</button>
+  </mat-card-actions>
+</mat-card>

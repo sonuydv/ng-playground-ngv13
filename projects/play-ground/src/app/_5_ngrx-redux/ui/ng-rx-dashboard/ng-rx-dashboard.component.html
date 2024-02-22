@@ -1,0 +1,15 @@
+<div class="root-comp">
+
+  <div class="panel">
+    <h2>Books</h2>
+    <mat-progress-spinner *ngIf="isLoading$ | async;else bookList"></mat-progress-spinner>
+    <ng-template #bookList>
+      <app-book-list [books]="(books$ | async)?.payload!" (add)="addBook($event)"></app-book-list>
+    </ng-template>
+  </div>
+
+  <div class="panel">
+    <h2>Collection</h2>
+    <app-book-collection [books]="(collection$ | async)!" (remove)="removeBook($event)"></app-book-collection>
+  </div>
+</div>

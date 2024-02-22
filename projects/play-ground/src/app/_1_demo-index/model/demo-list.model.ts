@@ -14,8 +14,13 @@ export const demoPathList : DemoItemModel[] = [
   },
 
   {
-    routePath: 'onPushDemo',
-    title: 'OnPush Strategy Demo'
+    routePath: 'reactiveForm',
+    title: 'Reactive form demo'
+  },
+
+  {
+    routePath: 'ngrxRedux',
+    title: 'NgRx Redux'
   },
   {
     routePath: 'onPushDemo',
@@ -25,4 +30,5 @@ export const demoPathList : DemoItemModel[] = [
     routePath: 'onPushDemo',
     title: 'OnPush Strategy Demo'
   },
+
 ]
