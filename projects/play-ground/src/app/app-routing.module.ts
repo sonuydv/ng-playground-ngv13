@@ -7,6 +7,11 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./_1_demo-index/demo-list.module').then(m => m.DemoListModule)
   },
+
+  {
+    path: DemoRoutesPath.tmp,
+    loadChildren: () => import('./tmp/tmp.module').then(m=>m.TmpModule)
+  },
   {
     path: DemoRoutesPath.onPushDemo,
     loadChildren: () => import('./_3_on-push-demo/on-push-demo.module').then(m => m.OnPushDemoModule)
@@ -23,14 +28,12 @@ const routes: Routes = [
    path: DemoRoutesPath.ngForms,
    loadChildren: () => import('./_6_ng_forms/_6_ng_forms.module').then(m=>m._6_ng_formsModule)
   },
+
   {
-    path: DemoRoutesPath.ngRxPattern,
-    loadChildren: ()=> import('./_7_ngrx-pattern/_7_ngrx-pattern.module').then(m=>m._7_NgrxPatternModule)
+    path: DemoRoutesPath.customReduxImpl,
+    loadChildren: () => import('./_7_custom-redux-pattern/_7_custom-redux.module').then(m=>m._7_customReduxModule)
   },
-  {
-    path: DemoRoutesPath.tmp,
-    loadChildren: () => import('./tmp/tmp.module').then(m=>m.TmpModule)
-  }
+
 ];
 
 @NgModule({

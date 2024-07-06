@@ -2,14 +2,20 @@ import {DemoItemModel} from "./demo-list.model";
 
 
 export enum DemoRoutesPath {
+  tmp = 'tmp',
   onPushDemo = 'onPushDemo',
   reactiveForm = 'reactiveForm',
   ngrxRedux = 'ngrxRedux',
   ngForms = 'ngForms',
-  ngRxPattern = 'ngRxPattern',
-  tmp = 'tmp'
+  customReduxImpl = 'customReduxImpl'
 }
 export const demoPathList : DemoItemModel[] = [
+
+
+  {
+    routePath: DemoRoutesPath.tmp,
+    title: 'Tmp'
+  },
   {
     routePath: DemoRoutesPath.onPushDemo,
     title: 'OnPush Strategy Demo'
@@ -28,13 +34,10 @@ export const demoPathList : DemoItemModel[] = [
     routePath: DemoRoutesPath.ngForms,
     title: 'Angular Forms'
   },
+
   {
-    routePath: DemoRoutesPath.ngRxPattern,
-    title: 'Ng Rx Architecture'
+    routePath: DemoRoutesPath.customReduxImpl,
+    title: 'Custom Redux pattern implementation'
   },
-  {
-    routePath: DemoRoutesPath.tmp,
-    title: 'Tmp'
-  }
 
 ]

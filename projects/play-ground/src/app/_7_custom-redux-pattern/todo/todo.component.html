@@ -1,0 +1,14 @@
+<div class="comp-root">
+  <div class="todo-header">
+    <h1>Todo List</h1>
+  </div>
+
+  <div class="todo-list">
+    <div *ngFor="let todo of todos">
+      <h1>{{todo.id}}</h1>
+      <h1>{{todo.title}}</h1>
+      <h1>{{todo.desc}}</h1>
+    </div>
+    <button (click)="addNewTodo()" mat-raised-button>Add</button>
+  </div>
+</div>

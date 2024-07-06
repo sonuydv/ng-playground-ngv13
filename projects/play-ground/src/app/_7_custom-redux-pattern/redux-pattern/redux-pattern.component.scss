@@ -1,0 +1,24 @@
+
+.comp-root{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+
+
+.todo-comp{
+  flex-grow: 1;
+  height: 100%;
+  border: 1px gray solid;
+}
+
+.user-comp{
+  flex-grow: 1;
+  height: 100%;
+  border: 1px gray solid;
+}

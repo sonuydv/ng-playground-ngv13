@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RootCompComponent } from './root-comp.component';
+import { ReduxPatternComponent } from './redux-pattern.component';
 
-describe('RootCompComponent', () => {
-  let component: RootCompComponent;
-  let fixture: ComponentFixture<RootCompComponent>;
+describe('ReduxPatternComponent', () => {
+  let component: ReduxPatternComponent;
+  let fixture: ComponentFixture<ReduxPatternComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RootCompComponent ]
+      declarations: [ ReduxPatternComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RootCompComponent);
+    fixture = TestBed.createComponent(ReduxPatternComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
