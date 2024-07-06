@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {demoPathList} from "../model/demo-list.model";
+import {demoPathList} from "../model/demo.const";
 
 @Component({
   selector: 'app-_1_demo-index',

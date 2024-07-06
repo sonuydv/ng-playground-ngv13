@@ -1,0 +1,66 @@
+
+.dep-item-wrapper{
+  width: 50%;
+  height: auto;
+
+  .item-section{
+    background-color: #89838f29;
+    display: flex;
+    flex-direction: row;
+
+    .arrow-wrapper{
+      flex: 0 0 25%;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+    .content-wrapper{
+      flex: 0 0 65%;
+    }
+  }
+
+  .item-ctrl{
+    //background-color: rgb(209 245 249 / 53%);
+  }
+}
+
+
+.top-arrow{
+  align-self: end;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+
+  div{
+    text-align: center;
+    font-size: 12px;
+  }
+
+  span{
+    flex-grow: 1;
+    width: 100%;
+    border-left: 2px gray solid;
+    border-top: 2px gray solid;
+  }
+}
+
+
+.bottom-arrow{
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+
+  span{
+    flex-grow: 1;
+    width: 100%;
+    border-left: 2px gray solid;
+    border-bottom: 2px gray solid;
+  }
+  div{
+    text-align: center;
+    font-size: 12px;
+  }
+}

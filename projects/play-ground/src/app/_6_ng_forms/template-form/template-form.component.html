@@ -1,0 +1,29 @@
+<div class="template-form">
+  <h1>Template Form</h1>
+
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <p>
+      <label>First Name:</label>
+      <input type="text"
+             name="firstName"
+             [(ngModel)]="user.firstName" required>
+    </p>
+    <p>
+      <label>Password:</label>
+      <input type="password"
+             name="password"
+             [(ngModel)]="user.password" required>
+    </p>
+    <p>
+      <button type="submit" >Submit</button>
+    </p>
+  </form>
+
+
+  <div class="item">
+
+  </div>
+
+  <p>Message : {{msg}}</p>
+
+</div>

@@ -1,0 +1,19 @@
+<div class="reactive-form">
+ <h1>Reactive Form</h1>
+
+  <form >
+    <label>Name</label>
+    <input [formControl]="name" matInput  placeholder="Enter Name">
+
+
+    <label>Email</label>
+    <input [formControl]="email" matInput  placeholder="Enter Email">
+
+  </form>
+
+  <p *ngIf="email.hasError('required')">Required Field</p>
+  <p *ngIf="email.hasError('email')">Invalid email</p>
+
+
+  <p>Message : {{msg}}</p>
+</div>

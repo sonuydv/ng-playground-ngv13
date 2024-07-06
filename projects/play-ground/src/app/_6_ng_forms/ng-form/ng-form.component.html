@@ -1,0 +1,19 @@
+<div class="ng-forms">
+<!--  <mat-tab-group>-->
+<!--    <mat-tab label="Template Driven Form">-->
+<!--      <app-template-form></app-template-form>-->
+<!--    </mat-tab>-->
+<!--    <mat-tab label="Reactive Form">-->
+<!--      <app-reactive-form></app-reactive-form>-->
+<!--    </mat-tab>-->
+<!--  </mat-tab-group>-->
+
+  <app-template-form class="item"></app-template-form>
+
+  <app-reactive-form class="item"></app-reactive-form>
+
+
+  <button (click)="formSrv.deliveryAgent.deliver('t1','delivery for t1')" mat-flat-button color="accent">T_1</button>
+  <button (click)="formSrv.deliveryAgent.deliver('t2','delivery for t2')" mat-flat-button color="primary">T_2</button>
+
+</div>
